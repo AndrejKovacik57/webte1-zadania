@@ -1,0 +1,375 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:#333333 ;
+}
+h1{
+    margin: 20px 150px 20px 0;
+    padding: 0;
+    color: #BBBBBB;
+    font-size: 30px;
+
+}
+
+.tooltip h2{
+    margin: 10px;
+    padding: 0;
+    font-size: 25px;
+}
+
+footer h2{
+    margin: 10px;
+    padding: 0;
+    font-size: 25px;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    background-color:  black;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+
+section{
+    margin: 0;
+    padding:0;
+    background-image: url("../back_ground.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: #141414;
+    display: flex;
+    justify-content: flex-end
+}
+
+footer{
+    margin: 0;
+    padding: 10px;
+    background-color: #2E2E2E;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.character{
+    width: 30%;
+    margin:  50px;
+    padding-top: 37%;
+    background-image: url("../V38-Guts-Manga.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    margin-right: 10px;
+    padding: 0;
+    float:left;
+}
+a{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #BBBBBB;
+}
+
+.marker{
+    background-image: url("../questionmarkblue.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+#dragon_slayer{
+    width: 4%;
+    height: 3%;
+    top: 90%;
+    left: 50%;
+}
+#throwing_knife{
+    width: 4%;
+    height: 3%;
+    top: 70%;
+    left: 58%;
+}
+
+#cannon_arm{
+    width: 4%;
+    height: 3%;
+    top: 50%;
+    left: 63%;
+}
+
+#berserker_armor{
+    width: 4%;
+    height: 3%;
+    top: 30%;
+    left: 35%;
+}
+
+#miniature_bomb{
+    width: 4%;
+    height: 3%;
+    top: 75%;
+    left: 75%;
+}
+
+.tooltip {
+    width:180px;
+    visibility: hidden;
+    background-color: #141414;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #D6D6D6;
+    position: absolute;
+    z-index: 1;
+
+}
+.marker:hover .tooltip {
+    visibility: visible;
+}
+
+.tooltip  img{
+    width: 100%;
+    height: auto;
+
+}
+.marker .tooltip  p{
+    margin: 10px;
+    font-size: 18px;
+
+}
+#berserker_armor  .tooltip{
+    top: -1000%;
+    right: 100%;
+}
+#dragon_slayer  .tooltip{
+    bottom: 100%;
+    left: 100%;
+}
+#miniature_bomb  .tooltip{
+    bottom: 100%;
+    right: -500%;
+}
+#cannon_arm  .tooltip{
+    top: -1000%;
+    left: 100%;
+}
+#throwing_knife  .tooltip{
+    left: 100%;
+    bottom: 100%;
+}
+@media(max-width: 1500px) {
+    h1{
+        margin: 10px 120px 10px 0;
+
+    }
+    .tooltip h2{
+        font-size: 20px;
+    }
+    .tooltip {
+        width: 140px;
+    }
+    .marker .tooltip  p{
+        font-size: 15px;
+    }
+
+    footer h2{
+        margin: 10px;
+        font-size: 20px;
+    }
+    a{
+        font-size: 15px;
+    }
+
+
+}
+@media(max-width: 1200px) {
+    h1{
+        margin: 10px 120px 10px 0;
+        font-size: 25px;
+
+    }
+    .tooltip h2{
+        font-size: 15px;
+    }
+    .tooltip {
+        width: 120px;
+    }
+    .marker .tooltip  p{
+        font-size: 12px;
+    }
+    footer{
+        padding: 0;
+    }
+    footer h2{
+        margin: 10px;
+        font-size: 20px;
+    }
+    a{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 1000px) {
+    h1{
+        margin: 10px 110px 10px 0;
+        font-size: 20px;
+    }
+
+    .tooltip h2{
+        margin: 5px;
+        font-size: 15px;
+    }
+    .tooltip {
+        width: 100px;
+    }
+    .marker .tooltip  p{
+        margin: 5px;
+        font-size: 12px;
+    }
+    footer h2{
+        margin: 5px;
+        font-size: 15px;
+    }
+    a{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 700px) {
+    h1{
+        margin: 8px 100px 8px 0;
+        font-size: 16px;
+
+    }
+
+    .tooltip h2{
+        margin: 5px;
+        font-size: 12px;
+    }
+    .tooltip {
+        width: 90px;
+    }
+    .marker .tooltip  p{
+        margin: 5px;
+        font-size: 10px;
+
+    }
+    footer h2{
+        margin: 5px;
+        font-size: 12px;
+    }
+    a{
+        font-size: 10px;
+    }
+
+
+}
+@media(max-width: 500px) {
+    h1{
+        margin: 6px 80px 6px 0;
+        font-size: 14px;
+
+    }
+
+    .tooltip h2{
+        margin: 2px;
+        font-size: 10px;
+    }
+    .tooltip {
+        width: 70px;
+    }
+    .marker .tooltip  p{
+        margin: 2px;
+        font-size: 8px;
+    }
+    #berserker_armor  .tooltip{
+        top: -800%;
+        right: 100%;
+    }
+    footer h2{
+        margin: 0;
+        font-size: 10px;
+    }
+    a{
+        font-size: 8px;
+    }
+
+}
+
+@media(max-width: 400px) {
+    h1{
+        margin: 4px 60px 4px 0;
+        font-size: 12px;
+    }
+
+    .tooltip h2{
+        margin: 1px;
+        font-size: 8px;
+    }
+    .tooltip {
+        width: 80px;
+        border-width: 1px;
+    }
+    .marker .tooltip  p{
+        margin: 1px;
+        font-size: 6px;
+    }
+    footer h2{
+        margin: 0;
+        font-size: 8px;
+    }
+    a{
+        font-size: 6px;
+    }
+}
+
+@media(max-width: 350px) {
+    h1{
+        margin: 2px 40px 2px 0;
+        font-size: 10px;
+    }
+
+    .tooltip h2{
+        margin: 1px;
+        font-size: 8px;
+    }
+    .tooltip {
+        width: 70px;
+        border-width: 1px;
+    }
+    .marker .tooltip  p{
+        margin: 1px;
+        font-size: 6px;
+    }
+    footer h2{
+        margin: 0;
+        font-size: 8px;
+    }
+    a{
+        font-size: 6px;
+    }
+}

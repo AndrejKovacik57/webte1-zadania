@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="webte1.fei.stuba.sk" id="715d6062-9ee4-409b-bf66-20b7bf7253e3" port="22" customName="webte1.fei.stuba.sk" nameFormat="CUSTOM" username="xkovacika1">
+        <option name="customName" value="webte1.fei.stuba.sk" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

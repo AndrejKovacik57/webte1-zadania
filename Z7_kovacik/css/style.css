@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+
+}
+h1{
+    margin: 0;
+    padding: 0.8vh 0 0.8vh 0;
+    width: 100%;
+    text-align: center;
+    background-color: deepskyblue;
+    font-size: 35px;
+}
+
+
+#filter{
+    width: 600px;
+    font-size: 20px;
+}
+.sortable {
+    display: flex;
+    margin: 15px;
+    gap: 15px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sortable  img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.frame{
+     border: 1px solid black;
+     height: 200px;
+     padding: 4px;
+ }
+.sortable  img:hover{
+    transform: scale(1.1);
+}
+
+
+#back{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.96);
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+#bigger_picture{
+    min-width: 100px;
+    min-height: 100px;
+
+}
+#obsah{
+    background-color: rgba(1, 190, 239, 0.75);
+}
+#popisok, #titulok {
+    padding: 0;
+    margin: 0;
+}
+
+#titulok{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 30px;
+}
+#popisok{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+#cisloObrazka{
+    font-size: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+.backcontainer{
+    width: 40%;
+}
+#bigger_picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bigger_picture img{
+    width: 100%;
+    height: 100%;
+}
+
+#olvadanie{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 112, 255, 0.65);
+}
+
+#left_side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+#middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    font-size: 25px;
+    background-color: rgba(0, 112, 255, 0.65);
+}
+#right_side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+ }
+#right_side button,#left_side button{
+    width:100%;
+    height: 100%;
+    font-size: 25px;
+    background-color: rgba(0, 112, 255, 0.65);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#left_side button:hover{
+    background-color: white;
+    border: none;
+    color: rgba(0, 112, 255, 0.65);
+}
+#right_side button:hover{
+    background-color: white;
+    border: none;
+    color: rgba(0, 112, 255, 0.65);
+}
+#close{
+    position: relative;
+    float: right;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    left: 20.8%;
+}
+footer{
+    margin: 0;
+    padding: 1vh 0 1vh 0;
+    width: 100%;
+    text-align: center;
+    background-color: deepskyblue;
+    font-size: 25px;
+}
+@media(max-width: 900px){
+
+    #middle{
+        font-size: 15px;
+    }
+    #right_side button{
+        font-size: 15px;
+    }
+    #left_side button{
+        font-size: 15px;
+    }
+    #titulok{
+
+        font-size: 20px;
+    }
+    #popisok{
+        text-align: center;
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+@media(max-width: 600px){
+
+    #middle{
+        font-size: 10px;
+    }
+    #right_side button{
+        font-size: 10px;
+    }
+    #left_side button{
+        font-size: 10px;
+    }
+    #titulok{
+
+        font-size: 15px;
+    }
+    #popisok{
+        text-align: center;
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+@media(max-width: 700px){
+
+   #filter{
+       width: 400px;
+       font-size: 20px;
+   }
+
+}
+
+@media(max-width: 700px){
+    .backcontainer{
+        width: 280px;
+    }
+    #close{
+       left: 0;
+    }
+}
+@media(max-width: 500px){
+
+    #filter{
+        width: 200px;
+        font-size: 15px;
+    }
+    .sortable img{
+        height: 100px;
+        width:100px ;
+    }
+    .frame{
+        height:100px ;
+    }
+}

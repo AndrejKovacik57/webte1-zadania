@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "fotka1.jpeg",
+    "title": "Mesto cez deň",
+    "description": "Dlhší popis obrázka 1"
+  },
+  {
+    "filename": "fotka2.jpeg",
+    "title": "Mesto v hmle",
+    "description": "Dlhší popis obrázka 2"
+  },
+  {
+    "filename": "fotka3.jpeg",
+    "title": "Obloha",
+    "description": "Dlhší popis obrázka 3"
+  },
+  {
+    "filename": "fotka4.jpeg",
+    "title": "Mesto cez noc",
+    "description": "Dlhší popis obrázka 4"
+  },
+  {
+    "filename": "fotka5.jpeg",
+    "title": "Príroda",
+    "description": "Dlhší popis obrázka 5"
+  }
+]

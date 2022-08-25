@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/style.css">
+	<title>Zadanie 4</title>
+
+</head>
+
+<body>
+	<div class="container">
+
+		<form>
+			<div class="hlavna_cast" id="idecko">
+				<div id="tabulka" ></div>
+				<h1>Generátor tabuľky hodnôt funkcie f() = X.Y</h1>
+				<div class="element_container">
+					<div class="element">
+						<label for="cislo1">Zadaj X:</label>
+						<div class="napoveda">
+							<input type="number" id="cislo1" name="cislo1"  placeholder="0" onchange="cisloValidator(this.value,'cislo1','cislo_napoveda1')">
+							<span id="cislo_napoveda1">Čísla len od 1 po 9</span>
+						</div>
+					</div>
+
+					<div class="element">
+						<label for="cislo2">Zadaj Y:</label>
+						<div class="napoveda">
+							<input type="number" id="cislo2" name="cislo2"  placeholder="0"  onchange="cisloValidator(this.value,'cislo2','cislo_napoveda2')">
+							<span id="cislo_napoveda2">Čísla len od 1 po 9</span>
+						</div>
+					</div>
+
+					<div class="element">
+						<button  type="button" id="btn" value="vytvor">Vytvor!</button>
+					</div>
+				</div>
+			</div>
+		</form>
+
+	</div>
+
+
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>

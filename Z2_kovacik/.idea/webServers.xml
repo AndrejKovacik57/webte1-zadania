@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4cc14fb3-b378-441a-ace2-7f54c8e3540c" name="webte1.fei.stuba.sk">
+        <fileTransfer rootFolder="/home/xkovacika1" accessType="SFTP" host="webte1.fei.stuba.sk" port="22" sshConfigId="99135c13-12ab-43fa-9514-f224b2275aa9" sshConfig="webte1.fei.stuba.sk">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

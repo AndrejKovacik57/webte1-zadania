@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Zadanie 3</title>
+	<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+<header>
+
+</header>
+
+<section>
+	<form id="form" action="https://iolab.sk/form2mail/form2mail.php" method="post" enctype="multipart/form-data" onsubmit="return overenieForm()" >
+		<input type="hidden" name="apikey" value="a5cf8b26d3d4b619490368d979c2a9ac">
+		<input type="hidden" name="from" value="stuba mail">
+		<input type="hidden" name="sender" value="meno">
+		<input type="hidden" name="to" value="mail cviciaceho podla zadania">
+		<input type="hidden" name="subject" value="Zadanie3">
+		<input type="hidden" name="redirectOk" value="link na stanku">
+		<input type="hidden" name="redirectFalse" value="https://www.google.com/">
+
+		<div class="grid_container">
+
+			<div class="osobne_udaje grid_container_element">
+
+				<h2>Osobné údaje</h2>
+				<div class="udaje_grid">
+					<div class="udaje_grid_element">
+						<label for="meno">*Meno:</label>
+						<div class="napoveda">
+							<input type="text" id="meno" name="meno"  placeholder="Meno" onchange="menoValidator(this.value,'meno','meno_napoveda')" required>
+							<span id="meno_napoveda">Musi obsahovať iba písmená</span>
+						</div>
+					</div>
+
+
+					<div class="udaje_grid_element">
+						<label for="prezvisko">*Priezvisko:</label>
+						<div class="napoveda">
+							<input type="text" id="prezvisko" name="prezvisko" placeholder="Priezvisko" onchange="menoValidator(this.value,'prezvisko','priezvisko_napoveda')" required>
+							<span id="priezvisko_napoveda"> Musi obsahovať iba písmená</span>
+						</div>
+
+					</div>
+
+
+					<div class="udaje_grid_element">
+						<label for="vek">*Vek:</label>
+						<div class="napoveda">
+							<input type="number" id="vek" name="vek" placeholder="18" required>
+							<span id="vek_napoveda">Vek sa musí zhodovať s dátumom narodenia</span>
+						</div>
+					</div>
+
+
+					<div class="udaje_grid_element">
+						<label for="narodeniny">*Datum narodenia:</label>
+						<div class="napoveda">
+							<input type="date" id="narodeniny" name="narodeniny" onchange="ageValidator(this.value)" required>
+							<span id="datum_napoveda">Dátum narodenia sa musí zhodovať s vekom</span>
+						</div>
+					</div>
+
+
+					<div class="udaje_grid_element">
+						<label for="email">*Email:</label>
+						<div class="napoveda">
+							<input type="email" id="email" name="email" placeholder="vzor@email.sk" onchange="emailValidator(this.value)" required>
+							<span id="mail_napoveda">Email musi vypadať takto: vzor@email.sk</span>
+						</div>
+					</div>
+
+
+					<div class="udaje_grid_element">
+						<label for="telefon">*Telefónne číslo:</label>
+						<div class="napoveda">
+							<input type="tel" id="telefon" name="telefon" placeholder="0912345678" onchange="cisloValidator(this.value)" required>
+							<span id="tel_napoveda">Musí obsahovať iba čísla, spolu 10 číslic.</span>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+
+			<div class="kde_hras grid_container_element" onclick="nehra(); pocitac() ">
+				<h2>Na čom hráš</h2>
+				<div class="radio">
+					<div class="radio_element">
+						<input type="radio" id="konzola" value="konzola" name="radiobutton">
+						<label for="konzola">Konzola</label>
+					</div>
+
+					<div class="radio_element">
+						<input type="radio" id="pc" value="pc" name="radiobutton" >
+						<label for="pc">Počítač</label>
+					</div>
+
+					<div class="radio_element">
+						<input type="radio" id="nehram" value="nehram" name="radiobutton">
+						<label for="nehram">Nehrám</label>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="vyber_konzoly grid_container_element">
+				<h2>Akú konzolu vlastníš</h2>
+				<div class="choose_boxes" >
+
+					<label for="sel1">Typ konzole:</label>
+					<select name="sel1" id="sel1" onchange="giveSelection1(this.value)">
+						<option value="handheld">Handheld</option>
+						<option value="konzola">Konzola</option>
+					</select>
+
+					<label for="sel2">Značka:</label>
+					<select name="sel2" id="sel2" onchange="giveSelection2(this.value)">
+						<option value="nintendo" data-option="handheld">Nintendo</option>
+						<option value="steam" data-option="handheld">Steam</option>
+						<option value="playstation" data-option="konzola">PlayStation</option>
+						<option value="xbox" data-option="konzola">Xbox</option>
+					</select>
+
+					<label for="sel3">Model:</label>
+					<select name="sel3" id="sel3">
+						<option value="nintendo_switch" data-option="nintendo">Nintendo Switch</option>
+						<option value="nintendo_switch_oled" data-option="nintendo">Nintendo Switch OLED</option>
+						<option value="nintendo_switch_lite" data-option="nintendo">Nintendo Switch Lite</option>
+						<option value="steam_deck" data-option="steam">Steam Deck</option>
+						<option value="playstation5" data-option="playstation">PlayStation 5</option>
+						<option value="playstation5_dig" data-option="playstation">PlayStation 5 digital</option>
+						<option value="xbox_series_x" data-option="xbox">Xbox Series X</option>
+					</select>
+
+				</div>
+			</div>
+
+
+			<div class="zaner grid_container_element">
+				<h2>Aký žáner hier hráš</h2>
+				<div class="zaner_box" onclick="ine()">
+
+					<div class="zaner_box_elemet">
+						<input type="checkbox" id="akcne" name="akcne">
+						<label for="akcne">Akčné</label>
+					</div>
+
+					<div class="zaner_box_elemet">
+						<input type="checkbox" id="rpg" name="rpg">
+						<label for="rpg">RPG</label>
+					</div>
+
+					<div class="zaner_box_elemet">
+						<input type="checkbox" id="strategicke" name="strategicke">
+						<label for="strategicke">Strategické</label>
+					</div>
+
+					<div class="zaner_box_elemet">
+						<input type="checkbox" id="ine" name="ine"  >
+						<label for="ine">Iné</label>
+					</div>
+
+					<div class="zaner_box_elemet last">
+						<input type="text" id="zaner_iny_text" name="zaner_iny_text" placeholder="Napíš aký žáner ešte hráš">
+						<label for="zaner_iny_text"></label>
+					</div>
+
+				</div>
+			</div>
+			<div class="nie_gamer grid_container_element">
+				<h2>Napíš par slov prečo nehráš hry</h2>
+				<div class="nie_o_hre">
+					<textarea id="no_game" name="no_game" rows="5" cols="100"></textarea>
+					<label for="no_game"></label>
+				</div>
+			</div>
+
+			<div class="gamer grid_container_element">
+				<h2>Napíš par slov o tvojej obľúbenej hre</h2>
+				<div class="o_hre">
+					<textarea id="fav_game" name="fav_game" rows="5" cols="100"></textarea>
+					<label for="fav_game"></label>
+				</div>
+			</div>
+
+			<div class="send_button grid_container_element">
+				<button  type="submit" value="submit"  >Odoslať!</button>
+			</div>
+
+		</div>
+	</form>
+
+</section>
+
+<footer>
+	<script src="js/script.js"></script>
+</footer>
+
+</body>
+
+</html>

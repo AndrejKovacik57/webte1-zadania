@@ -1,0 +1,197 @@
+/*o mne*/
+header{
+    height: 100px;
+    background-color: #ffa918;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: #ff5103;
+    font-size: 80px;
+}
+h2{
+    color: #ff5103;
+    font-size: 40px;
+    margin: 20px;
+}
+h3{
+    color: #ff5103;
+    font-size: 25px;
+    margin: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #ff9016;
+
+}
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+
+
+}
+
+ul.navigation li {
+    float: left;
+}
+
+ul.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size:20px;
+    text-decoration: none;
+}
+
+ul.navigation li a:hover {
+    background-color: #ff5103;
+}
+
+ul.subjects {
+    margin-left: 20px;
+
+}
+ul.subjects li {
+    font-size:35px;
+}
+
+.section_wrap{
+    display: flex;
+    justify-content: center;
+}
+
+section.left{
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #ffd311;
+}
+section.right{
+    width:50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #ffb70d;
+}
+
+img{
+    float: left;
+    display: block;
+    margin:  0 20px 0 20px;
+}
+p{
+    text-align: left;
+    font-size: 20px;
+    margin: 20px;
+}
+
+article p{
+    text-align: left;
+
+}
+
+footer{
+    height: 50px;
+    margin-top: auto;
+    background-color: #ffa918;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+aside.quote {
+
+    margin-right: 15px;
+    float: right;
+    font-style: italic;
+    width: 60%;
+}
+
+aside.quote p {
+    text-align: left;
+    font-size: 45px;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    background-color: #ffe434;
+}
+/*dalsie stranky zdielaju hlavne css ak potrebujem dalej upravim pre podstranky*/
+
+/*zivotopis*/
+
+section.bio_left{
+    margin-right: 25px;
+    margin-left: 50px;
+
+}
+
+section.bio_right{
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+img.bio_photo{
+    margin: 20px;
+}
+
+
+section.bio ul {
+    list-style-type: none;
+}
+
+section.bio li {
+    font-size: 20px;
+
+}
+
+/*rozvrh*/
+
+table, th, td {
+    border:2px solid  #ff2c00;
+    border-collapse: collapse;
+
+}
+th, td {
+    width: 100px;
+    height: 50px;
+}
+table{
+    font-size: 20px;
+    margin: 50px;
+}
+td{
+
+    text-align: center;
+}
+section.schedule{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table{
+
+    background-color: rgba(255,143,0,0.63);
+
+}
+
+.cviko{
+    background-color: #ff6800;
+
+}
+
+.prednaska{
+    background-color: #ff9016;
+
+
+}
+
+.telesna{
+    background-color: #f1ff00;
+
+}

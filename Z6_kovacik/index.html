@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Zadanie 6</title>
+
+</head>
+
+<body>
+	<header>
+		<h1>Graf</h1>
+	</header>
+	<div class="container">
+		<div class="graf">
+			<canvas id="myChart"></canvas>
+		</div>
+		<div class="nastavenia">
+			<div class="nastavenie_grafu">
+				<div class="vyber">
+					<label for="sin">Sinus</label>
+					<input type="checkbox" id="sin" value="Sinus" checked>
+				</div>
+				<div class="vyber">
+					<label for="cos">Cosinus</label>
+					<input type="checkbox" id="cos" value="Cosinus" checked>
+				</div>
+				<button type="button" id="koniec">Koniec</button>
+			</div>
+			<div class="nastavenie_amplitudy">
+				<my-input></my-input>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<h2>Vytvoril Andrej Kováčik</h2>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/1.1.1/chartjs-plugin-zoom.min.js" integrity="sha512-NxlWEbNbTV6acWnTsWRLIiwzOw0IwHQOYUCKBiu/NqZ+5jSy7gjMbpYI+/4KvaNuZ1qolbw+Vnd76pbIUYEG8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/my-input.js" type="module"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
