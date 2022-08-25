@@ -1,0 +1,252 @@
+[
+  {
+    "level_name": "Level 1",
+    "pokemoni": [
+      {
+        "pokemon_obrazok_src": "level_obrazky/level1/Cloyster.png",
+        "meno":"Cloyster"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level1/Ditto.png",
+        "meno":"Ditto"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level1/Gastly.png",
+        "meno":"Gastly"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level1/Koffing.png",
+        "meno":"Koffing"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level1/Shellder.png",
+        "meno":"Shellder"
+      }
+    ]
+  },
+  {
+    "level_name": "Level 2",
+    "pokemoni": [
+      {
+        "pokemon_obrazok_src": "level_obrazky/level2/Lanturn.png",
+        "meno":"Lanturn"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level2/Lapras.png",
+        "meno":"Lapras"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level2/Magikarp.png",
+        "meno":"Magikarp"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level2/Popplio.png",
+        "meno":"Popplio"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level2/Wailord.png",
+        "meno":"Wailord"
+      }
+    ]
+  },
+  {
+    "level_name": "Level 3",
+    "pokemoni": [
+      {
+        "pokemon_obrazok_src": "level_obrazky/level3/Carkol.png",
+        "meno":"Carkol"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level3/Dodrio.png",
+        "meno":"Dodrio"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level3/Exeggutor.png",
+        "meno":"Exeggutor"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level3/Porygon.png",
+        "meno":"Porygon"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level3/Stonjourner.png",
+        "meno":"Stonjourner"
+      }
+    ]
+  },
+  {
+    "level_name": "Level 4",
+    "pokemoni": [
+      {
+        "pokemon_obrazok_src": "level_obrazky/level4/Jolteon.png",
+        "meno":"Jolteon"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level4/Pachirisu.png",
+        "meno":"Pachirisu"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level4/Pikachu.png",
+        "meno":"Pikachu"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level4/Raticate.png",
+        "meno":"Raticate"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level4/Skitty.png",
+        "meno":"Skitty"
+      }
+    ]
+  },
+  {
+    "level_name": "Level 5",
+    "pokemoni": [
+      {
+        "pokemon_obrazok_src": "level_obrazky/level5/Espeon.png",
+        "meno":"Espeon"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level5/Glaceon.png",
+        "meno":"Glaceon"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level5/Leafeon.png",
+        "meno":"Leafeon"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level5/Sylveon.png",
+        "meno":"Sylveon"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level5/Umbreon.png",
+        "meno":"Umbreon"
+      }
+    ]
+  },
+  {
+    "level_name": "Level 6",
+    "pokemoni": [
+      {
+        "pokemon_obrazok_src": "level_obrazky/level6/Entei.png",
+        "meno":"Entei"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level6/Palkia.png",
+        "meno":"Palkia"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level6/Reshiram.png",
+        "meno":"Reshiram"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level6/Solgaleo.png",
+        "meno":"Solgaleo"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level6/Xerneas.png",
+        "meno":"Xerneas"
+      }
+    ]
+  },
+  {
+    "level_name": "Level 7",
+    "pokemoni": [
+      {
+        "pokemon_obrazok_src": "level_obrazky/level7/Pinsir.png",
+        "meno":"Pinsir"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level7/Scizor.png",
+        "meno":"Scizor"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level7/Venomoth.png",
+        "meno":"Venomoth"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level7/Vespiquen.png",
+        "meno":"Vespiquen"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level7/Yanmega.png",
+        "meno":"Yanmega"
+      }
+    ]
+  },
+  {
+    "level_name": "Level 8",
+    "pokemoni": [
+      {
+        "pokemon_obrazok_src": "level_obrazky/level8/Binacle.png",
+        "meno":"Binacle"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level8/Dugtrio.png",
+        "meno":"Dugtrio"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level8/Exeggcute.png",
+        "meno":"Exeggcute"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level8/Klink.png",
+        "meno":"Klink"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level8/Magneton.png",
+        "meno":"Magneton"
+      }
+    ]
+  },
+  {
+    "level_name": "Level 9",
+    "pokemoni": [
+      {
+        "pokemon_obrazok_src": "level_obrazky/level9/Ferrothorn.png",
+        "meno":"Ferrothorn"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level9/Giratina.png",
+        "meno":"Giratina"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level9/Omastar.png",
+        "meno":"Omastar"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level9/Tentacruel.png",
+        "meno":"Tentacruel"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level9/Toxapex.png",
+        "meno":"Toxapex"
+      }
+    ]
+  },
+  {
+    "level_name": "Level 10",
+    "pokemoni": [
+      {
+        "pokemon_obrazok_src": "level_obrazky/level10/Lileep.png",
+        "meno":"Lileep"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level10/Lilligant.png",
+        "meno":"Lilligant"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level10/Malamar.png",
+        "meno":"Malamar"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level10/Maractus.png",
+        "meno":"Maractus"
+      },
+      {
+        "pokemon_obrazok_src": "level_obrazky/level10/Wobbuffet.png",
+        "meno":"Wobbuffet"
+      }
+    ]
+  }
+]

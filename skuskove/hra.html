@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="theme-color" content="#4285f4"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+	<title>PokeKvíz</title>
+
+</head>
+
+<body>
+
+	<div id="back">
+		<div class="exit-container">
+			<button type="button" id="close">X</button>
+		</div>
+
+		<div class="h2-container">
+			<h2 id="final-score">AAAAAAAAAA</h2>
+		</div>
+	</div>
+	<header>
+		<h1>PokeKvíz</h1>
+	</header>
+	<nav>
+		<ul class="navigation">
+			<li><a href="index.html">Úvod</a></li>
+			<li><a href="hra.html">Hra</a></li>
+			<li><a href="navod.html">Návod</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="herne-okno">
+
+			<div class="horna-cast">
+
+				<div id="herne-info">
+					<h2 id="nazov-pokemona">aaaa</h2>
+					<h2 id="score">aaaa</h2>
+					<h2 id="aktualny-level"> aaa</h2>
+				</div>
+				<div class="sortable-odpoved">
+					<div class="ramec" id="odpoved"></div>
+				</div>
+
+			</div>
+
+			<div class="stred">
+				<div class="sortable-moznosti" id="moznosti">
+
+				</div>
+			</div>
+
+			<div class="dolna-cast">
+				<button type="button" id="odovzdaj">Odovzdaj!</button>
+				<div id="cierny-pas">
+					<div id="biely-kruh"></div>
+				</div>
+				<button type="button" id="dalsi-level">Ďalej</button>
+			</div>
+
+		</div>
+
+	</div>
+
+	<footer>
+		<h2>Vytvoril Andrej Kováčik</h2>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js" integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

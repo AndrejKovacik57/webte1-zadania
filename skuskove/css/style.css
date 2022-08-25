@@ -1,0 +1,352 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: rgb(252, 43, 43);
+
+}
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+ul.navigation li {
+    float: left;
+}
+
+ul.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size:20px;
+    text-decoration: none;
+}
+ul.navigation li a:hover {
+    background-color: rgb(192, 21, 21);
+}
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+header{
+    margin: 0;
+    width: 100%;
+    background-color: #006fb9;
+    display: flex;
+    align-items: center;
+}
+h1{
+    margin: 0 0 0 200px;
+    display:inline-block;
+    font-size: 35px;
+    text-align: left;
+    font-weight: bold;
+}
+footer{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f8ae3;
+    font-size: 20px;
+}
+footer h2{
+    margin: 10px;
+}
+
+/*uvod*/
+table{
+  background-color: gray;
+
+}
+table, th, td {
+    border:2px solid  black;
+    border-collapse: collapse;
+}
+td.uloha{
+    text-align: left;
+}
+td.vypracovanie{
+    text-align: center;
+}
+td.vypracovanie.ano{
+    background-color: rgba(0,205,0,0.86);
+}
+td.vypracovanie.nie{
+   background-color: rgba(205,0,0,0.86);
+}
+/*hra*/
+.herne-okno{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.horna-cast{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#herne-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.ramec{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+div.ramec img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: white;
+}
+.sortable-moznosti{
+    display: flex;
+    margin: 15px;
+    gap: 15px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sortable-moznosti  img:hover, .sortable-odpoved  img:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+
+#back{
+    position:  fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.96);
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+
+}
+.h2-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkred;
+    width: 80%;
+    height: 40%;
+}
+.exit-container{
+    display: flex;
+    justify-content: flex-end;
+    background-color: darkred;
+    width: 80%;
+
+}
+#close{
+    display: block;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.dolna-cast{
+    margin-top: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+#odovzdaj{
+    width: 100%;
+    height: 50%;
+    background: red;
+    border: none;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+}
+#odovzdaj:hover{
+    background-color: #b70707;
+}
+
+#cierny-pas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background: black;
+}
+#biely-kruh{
+    width: 15%;
+    height: 150%;
+    z-index: 1;
+    background: white;
+    border: 20px solid black;
+    border-radius: 50%;
+}
+#dalsi-level{
+    width: 100%;
+    height: 50%;
+    background: white;
+    border: none;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+
+    font-size: 25px;
+    color: Black;
+}
+#dalsi-level.active:hover{
+    background-color: #e1d9d9;
+    cursor: pointer;
+}
+
+/*navod*/
+div.info{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 80vh;
+    background-color: white;
+
+}
+article.popis{
+    width: 100%;
+}
+article.popis p{
+    text-align: left;
+}
+
+article.popis p, article.popis h2{
+    margin-left: 15px;
+}
+
+/*Hra*/
+@media(max-width: 700px){
+    .dolna-cast{
+        width: 200px;
+        height: 200px;
+    }
+
+    #odovzdaj{
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+    }
+
+    #dalsi-level{
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+
+}
+/*mobily*/
+
+/*hra*/
+@media(max-width: 480px){
+    h1{
+        margin: 0;
+    }
+    div.ramec{
+        width: 100px;
+        height: 100px;
+    }
+    div.ramec img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .dolna-cast{
+        margin-bottom: 0;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    #odovzdaj{
+        width: 50%;
+        height: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+
+    #cierny-pas{
+        width: 0;
+        height: 0;
+    }
+    #biely-kruh{
+        width: 0;
+        height: 0;
+        border: 0 solid black;
+
+    }
+    #dalsi-level{
+        width: 50%;
+        height: 100%;
+        background: white;
+        border: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+    }
+    footer{
+        font-size: 10px;
+    }
+
+}
+@media(max-width: 350px){
+    body{
+        width: 350px;
+    }
+}
+
+/*navod print*/
+@media print {
+
+    nav{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+}
